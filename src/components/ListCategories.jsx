@@ -11,17 +11,14 @@ const ListCategories = () => {
 		useState([]);
 
 	useEffect(() => {
-		buscar(
-			`https://api-rest-beryl.vercel.app/categorias`,
-			setCategories
-		);
+		buscar(`/categorias`, setCategories);
 	}, []);
 
 	return (
 		<ul className="category-list container flex">
 			{categories.map((category) => (
 				<Link
-					to={`https://api-rest-beryl.vercel.app/categoria/${category.id}`}
+					to={`/categoria/${category.id}`}
 					key={category.id}
 				>
 					<li

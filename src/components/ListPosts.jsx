@@ -24,7 +24,7 @@ const ListPosts = ({ url }) => {
 				} = post;
 				return (
 					<Link
-						to={`https://api-rest-beryl.vercel.app/posts/${id}`}
+						to={`/posts/${id}`}
 						className={`post__card post-card--${categoria}`}
 						key={id}
 					>

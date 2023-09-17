@@ -11,11 +11,7 @@ const Home = () => {
 			</div>
 
 			<ListCategories />
-			<ListPosts
-				url={
-					"https://api-rest-beryl.vercel.app/posts"
-				}
-			/>
+			<ListPosts url={"/posts"} />
 		</main>
 	);
 };
