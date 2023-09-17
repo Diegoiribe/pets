@@ -27,7 +27,7 @@ const Categoria = () => {
 
 	useEffect(() => {
 		buscar(
-			`/categorias?id=${id}`,
+			`https://api-rest-beryl.vercel.app/categorias?id=${id}`,
 			(response) => {
 				setSubcategorias(
 					response[0].subcategorias
@@ -62,15 +62,15 @@ const Categoria = () => {
 			</ul>
 			<Routes>
 				<Route
-					path="/"
+					path="https://api-rest-beryl.vercel.app/"
 					element={
 						<ListPosts
-							url={`/posts?categoria=${id}`}
+							url={`https://api-rest-beryl.vercel.app/posts?categoria=${id}`}
 						/>
 					}
 				/>
 				<Route
-					path="/:subcategoria"
+					path="https://api-rest-beryl.vercel.app/:subcategoria"
 					element={<SubCategoria />}
 				/>
 			</Routes>

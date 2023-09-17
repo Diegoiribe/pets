@@ -17,11 +17,14 @@ const Post = ({ url }) => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		buscar(`/posts/${id}`, setPost).catch(
-			() => {
-				navigate("/not-found");
-			}
-		);
+		buscar(
+			`https://api-rest-beryl.vercel.app/posts/${id}`,
+			setPost
+		).catch(() => {
+			navigate(
+				"https://api-rest-beryl.vercel.app/not-found"
+			);
+		});
 	}, [id]);
 
 	return (

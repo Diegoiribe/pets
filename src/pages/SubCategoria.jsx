@@ -5,7 +5,7 @@ const SubCategoria = () => {
 	const { subcategoria } = useParams();
 	return (
 		<ListPosts
-			url={`/posts?subcategoria=${subcategoria}`}
+			url={`https://api-rest-beryl.vercel.app/posts?subcategoria=${subcategoria}`}
 		/>
 	);
 };

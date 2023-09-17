@@ -10,7 +10,7 @@ const Header = () => {
 			</div>
 			<div className="header-container">
 				<Link
-					to="/"
+					to="https://api-rest-beryl.vercel.app/"
 					className="flex flex--center"
 				>
 					<img
@@ -44,7 +44,7 @@ const Header = () => {
 					<li>
 						<Link
 							className="menu-item"
-							to="/"
+							to="https://api-rest-beryl.vercel.app/"
 						>
 							Blog
 						</Link>
@@ -52,7 +52,7 @@ const Header = () => {
 					<li>
 						<Link
 							className="menu-item"
-							to="/sobre"
+							to="https://api-rest-beryl.vercel.app/sobre"
 						>
 							Sobre
 						</Link>
