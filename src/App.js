@@ -19,7 +19,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route
-					path="/"
+					path="https://api-rest-beryl.vercel.app/"
 					element={<Home />}
 				/>
 				<Route
@@ -31,7 +31,7 @@ function App() {
 					element={<Post />}
 				/>
 				<Route
-					path="/categorias/:id/*"
+					path="git a/categorias/:id/*"
 					element={<Categoria />}
 				/>
 				<Route
