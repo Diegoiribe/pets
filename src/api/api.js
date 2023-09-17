@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const api = axios.create({
 	baseURL:
-		"https://api-rest-beryl.vercel.app/",
+		"https://api-rest-beryl.vercel.app",
 });
 
 export const buscar = async (
