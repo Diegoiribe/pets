@@ -19,19 +19,21 @@ function App() {
 			<Header />
 			<Routes>
 				<Route
-					path="https://api-rest-beryl.vercel.app/"
+					path="https://pets-silk-nu.vercel.app/"
 					element={<Home />}
 				/>
 				<Route
-					path="/sobre"
+					path="https://pets-silk-nu.vercel.app/sobre"
 					element={<Sobre />}
 				/>
 				<Route
-					path={"/posts/:id"}
+					path={
+						"https://pets-silk-nu.vercel.app/posts/:id"
+					}
 					element={<Post />}
 				/>
 				<Route
-					path="git a/categorias/:id/*"
+					path="https://pets-silk-nu.vercel.app/categorias/:id/*"
 					element={<Categoria />}
 				/>
 				<Route

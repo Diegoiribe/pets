@@ -62,7 +62,7 @@ const Categoria = () => {
 			</ul>
 			<Routes>
 				<Route
-					path="https://api-rest-beryl.vercel.app/"
+					path="https://pets-silk-nu.vercel.app/"
 					element={
 						<ListPosts
 							url={`https://api-rest-beryl.vercel.app/posts?categoria=${id}`}
@@ -70,7 +70,7 @@ const Categoria = () => {
 					}
 				/>
 				<Route
-					path="https://api-rest-beryl.vercel.app/:subcategoria"
+					path="https://pets-silk-nu.vercel.app/:subcategoria"
 					element={<SubCategoria />}
 				/>
 			</Routes>
